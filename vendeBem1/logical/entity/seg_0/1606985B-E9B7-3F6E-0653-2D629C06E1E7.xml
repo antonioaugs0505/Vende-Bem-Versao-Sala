@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1606985B-E9B7-3F6E-0653-2D629C06E1E7" name="TB_FUNCIONARIO">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:50:13 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FUNCIONARIO" id="EE839050-47D2-A659-BCA5-8578ED49C332">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:50:29 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO CODIGO DO FUNCIONARIO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_FUNCIONARIO" id="1E3068EF-326E-E72F-3305-4E396318FFFB">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:50:54 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NOME DO FUNCIONARIO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="08EF808E-350C-E4F5-93DC-C196FC0BC7F6" name="TB_FUNCIONARIO PK">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:50:41 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE839050-47D2-A659-BCA5-8578ED49C332</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

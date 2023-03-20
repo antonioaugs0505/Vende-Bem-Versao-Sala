@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6686444-B2B2-5D3B-47AF-03C90802BC25" name="TB_PEDIDO">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:55:52 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NR_COMANDA" id="0C21BD2F-EFF6-4A95-ECB2-F68921750EA5">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:56:11 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NUMERO DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_PEDIDO" id="E505F6C5-7046-96CC-A418-60C7B29DB3FC">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:57:07 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO ATENDIMENTO  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PGTO" id="37CF7800-C84C-D2AA-5822-6F505CAFF0DE">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:58:06 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO TIPO DE PAGAMENTO  DO PEDIDO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TEMPO_PERMANENCIA" id="4F2C1C8C-6283-45CF-E2B0-4DCF04B6BE87">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:18:19 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO TEMPO DE PERMANENCIA DO CLIENTE]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_PRODUTO" id="9F00DC88-F195-435B-425F-3A79D315A1C6">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:48:48 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO PRODUTO PEDIDO ]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFE18912-8455-7C8E-FC29-94783C564B97" name="TB_PEDIDO PK">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:57:04 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C21BD2F-EFF6-4A95-ECB2-F68921750EA5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

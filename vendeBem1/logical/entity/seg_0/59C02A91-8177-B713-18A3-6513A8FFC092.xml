@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="59C02A91-8177-B713-18A3-6513A8FFC092" name="TB_ESTABELECIMENTO">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:40:19 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_EST" id="3EF0A377-FE5A-C30E-3420-5CA4F49660C4">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:40:42 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO CODIGO DO ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_EST" id="96D7B19B-6236-BD7E-81CD-1160C5E0EC50">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:47:02 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NOME DO ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PJ_EST" id="2E4AAD86-716D-12FB-96C7-15BE2C4671D1">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:53:49 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO CNPJ DO ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EN_EST" id="B6AF6906-039E-BEF5-ACDF-50D0CCEE5C08">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:08:21 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO ENDEREÇO DO  ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TL_EST" id="B5F52B6D-1246-3D73-DC0C-5DE11FB9A3D1">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:08:53 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO TELEFONE DO  ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MM_EST" id="CD007C8C-6C44-A200-D33F-340DB385DC60">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-20 00:10:08 UTC</createdTime>
+<comment><![CDATA[REFERENTE AO NUMERO DA MESA DO  ESTABELECIMENTO]]></comment>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7FD6E4C5-D225-E593-F549-DC211214A0F8" name="TB_ESTABELECIMENTO PK">
+<createdBy>Augusto</createdBy>
+<createdTime>2023-03-19 23:44:26 UTC</createdTime>
+<ownerDesignName>vendeBem</ownerDesignName>
+<engineerTo>
+<item key="60307334-CD58-CA84-0CA4-64FE2867994D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3EF0A377-FE5A-C30E-3420-5CA4F49660C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
